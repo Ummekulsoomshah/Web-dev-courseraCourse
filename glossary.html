@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset> 
+        <legend>Personal Info</legend> 
+        <label for="fname">First name:</label><br> 
+        <input type="text" id="fname" name="fname" value="John"><br> 
+        <label for="lname">Last name:</label><br> 
+        <input type="text" id="lname" name="lname" value="Doe"><br> 
+      </fieldset> 
+      
+      <fieldset> 
+        <legend>Qualificaiton</legend> 
+        <label for="pdegree">Primary degree:</label><br> 
+        <input type="text" id="pdegree" name="degree" value="Masters"><br> 
+        <label for="fos">Last name:</label><br> 
+        <input type="text" id="fos" name="field" value="Psychology"><br> 
+      </fieldset> 
+      <form action="/my_action_page"> 
+        <label for="flowers">Favourite flower:</label><br> 
+        <input list="flowers" name="flowers"> 
+        <datalist id="flowers"> 
+          <option value="Rose"> 
+          <option value="Lily"> 
+          <option value="Tulip"> 
+          <option value="Daffodil"> 
+          <option value="Orchid"> 
+        </datalist> 
+        <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br><br> 
+      </form>
+</body>
+</html>

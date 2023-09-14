@@ -1,0 +1,11 @@
+.parent{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+}
+.segment{
+    display: grid;
+     place-items: center; 
+     text-align: center; 
+    grid-template-rows: 100px;
+}

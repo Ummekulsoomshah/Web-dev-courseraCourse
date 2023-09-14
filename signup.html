@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* agr koi bnda no ki jgh letter dalde toh wo input box red hojaega mtlb glt dala input */
+        input:focus:invalid {
+            border: 2px solid red
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <main>
+            <h1>Sign Up</h1>
+            <form method="post">
+                <div>
+                    <label for="user_first_name">First name</label><br>
+                    <!-- min max krne se restrict krte user ko k km dale input ya itna dale -->
+                    <input type="text" id="user_first_name" name="user_first_name" required minlength="3"
+                        maxlength="12">
+
+                </div>
+
+                <label for="user_last_name">Last name</label><br>
+                <div>
+                    <input type="text" id="user_last_name" name="user_last_name">
+                </div>
+                <!-- using multiple with file input and email we can input more files and emails -->
+                <label for="user_email">Email</label><br>
+                <div><input type="email" id="user_email" name="user_email" multiple>
+                </div>
+                <label for="uer_password">Password </label><br>
+                <div><input type="password" id="uer_password" name="uer_password"></div>
+                <label for="user_confirm_password">Confir password</label><br>
+                <div><input type="password" id="user_confirm_password" name="user_confirm_password"></div>
+                <div>
+                    <button type="submit" onclick="alert('You just submitted!')">Sign up
+                    </button> 
+                </div>
+                <!-- <div>
+                    <button type="submit">Sign up</button>
+                </div> -->
+            </form>
+        </main>
+        <footer>
+            <p>Copyright Little Lemon</p>
+        </footer>
+    </nav>
+</body>
+
+</html>
